@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cadastro de Clientes</title>
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="shortcut icon" href="favicon.svg">
+
+	<!--<script src="ler-form.js" defer></script>-->
+</head>
+<body>
+	<div class="header-cta">
+		<header>
+				<a href="lista.html" class="href">Pesquisar</a>		    
+		</header>
+    </div>
+	<main class="main">
+		<div class="img_padrao">
+			<img src="img/inscricao.webp" alt="inscricao" >
+		</div>
+		<section>					
+			<form id="form1">
+				<div class="row">
+					<div class="box1">
+							<!--<fieldset class="box">-->
+							<h1 class="h1">
+								Preencha seu Cadastro
+							</h1>
+						<div class="col-4 col-s-12">
+							<label for="nomeCompleto"><b>Nome completo: </b></label><br>			
+							<input type="text" name="nome" placeholder="Nome completo" id="nomeCompleto" size="40%"><br><br>
+						</div>
+						
+						<div class="col-4 col-s-12">
+							<label for="cpfNumber"><b>CPF: </b></label><br>
+							<input type="number" name="cpf" placeholder="CPF" id="cpfNumber"><br><br>
+						</div>
+
+						<div class="col-4 col-s-12">
+							<label for="dataNasc"><b>Data de Nascimento: </b></label>
+							<input type="date" name="data" id="dataNasc"><br><br>
+						</div>
+						
+						<div class="col-4 col-s-12">
+							<label for="generoSexo"><b>Sexo: </b></label>
+							<select name="genero" id="generoSexo">
+								<option value="0">-Selecione-</option>
+								<option value="Masculino">Masculino</option>
+								<option value="Feminina">Feminina</option>
+								<option value="Indefinido">Indefinido</option>
+							</select><br><br>						
+							<!--<input type="radio" name="sex" value="male"> Masculino
+							<input type="radio" name="sex" value="female"> Feminino
+							<input type="radio" name="sex" value="female"> Indefinido<br><br>-->
+						</div>
+						
+						<div class="col-4 col-s-12">
+							<label for="nomeMae"><b>Nome da mãe: </b></label><br>
+							<input type="text" name="mae" placeholder="Nome da mãe" id="nomeMae" size="40%"><br><br>
+						</div>
+						
+						<div class="col-4 col-s-12">
+							<label for="email"><b>E-mail: </b></label><br>
+							<input type="email" name="email" placeholder="E-mail" id="email" size="40%"><br><br>
+						</div>
+	
+						<div class="col-4 col-s-12">
+							<label for="password"><b>Informe sua senha: </b></label><br>
+							<input type="password" id="password" placeholder="Password" name="passwordS" size="40%"><br><br>
+						</div>
+						
+						<div class="col-4 col-s-12">
+							<b>Repita novamente a senha: </b><br>
+							<input type="password" id="Repeat-password" placeholder="Repeat a Password" name="Repeat-password" size="40%"><br><br>
+						</div>
+						
+						<div id="row-cta" class="row">
+							<button id="cadastrar" class="button"><b>Cadastrar</b></button>
+							<span class="span"><em>Clique aqui em cadastrar.👉</em></span>				
+							<!--</fieldset>-->
+						</div>
+					</div>
+				 </div>
+			</form>
+		</section>
+	</main>	
+	<footer class="footer">
+		<p>
+            Copyright © 2022 EJS Todos os direitos reservados
+        </p>	
+	</footer>
+</body>
+</html>
